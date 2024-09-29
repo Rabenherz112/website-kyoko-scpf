@@ -1,5 +1,5 @@
 const employeeId = "ID#" + Math.floor(100 + Math.random() * 999);
-const usernames = ["Dr. Bright", "Dr. Clef", "Dr. Kondraki","Dr. Gears","Dr. Iceberg", "Dr. Glass","Dr. Crow","Agent Strelnikov", "Agent ██████", "Lt. Light", "Captain Hollis","D-9341","D-2000", "The Administrator", "O5-E", "SCP-999", "SCP-035", "Agent211", "Dr. Bunny", "Cerberus"]
+const usernames = ["Dr. Bright", "Dr. Clef", "Dr. Kondraki","Dr. Gears","Dr. Iceberg", "Dr. Glass","Dr. Crow","Agent Strelnikov", "Agent ██████", "Lt. Light", "Captain Hollis", "The Administrator", "O5-E", "Agent211", "Dr. Bunny", "Cerberus"]
 const username = usernames[Math.floor(Math.random() * usernames.length)];
 const passwordlength = Math.floor(5 + Math.random() * 16);
 const password = "*".repeat(passwordlength);
