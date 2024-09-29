@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <base href="https://www.kyoko-scpf.com/">
+        <title>SCP Foundation Terminal - Kyouko's SCPF</title>
+        <link rel="stylesheet" href="https://assets.theravenhub.com/customers/artyom/kyoko-scpf/main-website/css/main.css">
+        <link rel="stylesheet" href="https://assets.theravenhub.com/customers/artyom/kyoko-scpf/main-website/css/win7.css">
+        <script src="https://assets.theravenhub.com/customers/artyom/kyoko-scpf/main-website/js/terminal-login.js"></script>
+        <!--Meta Tags-->
+        <meta charset="UTF-8">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="SCP Foundation Intranet Terminal">
+        <meta name="keywords" content="SCP, SCP Foundation, Secure, Contain, Protect, Intranet, Terminal">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="index,nofollow">
+        <meta name="author" content="Rabenherz">
+        <meta name="publisher" content="Ravenhub">
+        <meta name="distribution" content="global">
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="https://assets.theravenhub.com/customers/artyom/kyoko-scpf/main-website/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://assets.theravenhub.com/customers/artyom/kyoko-scpf/main-website/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://assets.theravenhub.com/customers/artyom/kyoko-scpf/main-website/favicon/favicon-16x16.png">
+        <link rel="manifest" href="https://assets.theravenhub.com/customers/artyom/kyoko-scpf/main-website/favicon/site.webmanifest">
+        <link rel="mask-icon" href="https://assets.theravenhub.com/customers/artyom/kyoko-scpf/main-website/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="https://assets.theravenhub.com/customers/artyom/kyoko-scpf/main-website/favicon/favicon.ico">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-config" content="https://assets.theravenhub.com/customers/artyom/kyoko-scpf/main-website/favicon/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        <!-- Discord & Twitter -->
+        <meta property="og:title" content="SCP Foundation Terminal - Kyouko's SCPF">
+        <meta property="og:description" content="SCP Foundation Intranet Terminal">
+        <meta property="og:image" content="https://assets.theravenhub.com/customers/artyom/kyoko-scpf/main-website/icons/scpf_logo_main.png">
+        <meta property="og:url" content="https://www.kyoko-scpf.com/">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="SCP Foundation Terminal - Kyouko's SCPF">
+        <meta name="twitter:description" content="SCP Foundation Intranet Terminal">
+        <meta name="twitter:image" content="https://assets.theravenhub.com/customers/artyom/kyoko-scpf/main-website/icons/scpf_logo_main.png">
+        <meta name="twitter:site" content="@Kyoko_SCPF">
+        <meta name="twitter:creator" content="@Rabenherz">
+    </head>
+    <body>
+        <div id="watermark">
+            <img src="https://assets.theravenhub.com/customers/artyom/kyoko-scpf/main-website/icons/scpf_logo.png" alt="SCP Foundation logo" width="80" height="80">
+            <div class="watermark-text">
+                <p class="ld-he">SCP-FOUNDATION</p>
+                <p class="sub-he">Intranet</p>
+            </div>
+        </div>
+        <div id="background-logo">
+            <img src="https://assets.theravenhub.com/customers/artyom/kyoko-scpf/main-website/icons/scpf_logo.png" alt="SCP Foundation background">
+        </div>  
+        <div id="terminal">
+            <div id="logo">
+                <img src="https://assets.theravenhub.com/customers/artyom/kyoko-scpf/main-website/icons/scpf_logo.png"
+                    alt="SCP Foundation logo" width="200" height="200">
+                <h1 class="ld-he">SCP-FOUNDATION</h1>
+                <h1 class="sub-he">Intranet</h1>
+            </div>
+            <div id="login-form">
+                <p>Current ID:</p>
+                <input type="text" id="employee-id" placeholder="Employee ID"
+                    readonly>
+                <p>Username:</p>
+                <input type="text" id="username" placeholder="Username"
+                    readonly>
+                <p>Password:</p>
+                <input type="password" id="password" placeholder="Password"
+                    readonly>
+                <p>2FA:</p>
+                <input type="text" id="twofa" placeholder="2FA Code"
+                    readonly>
+                <button id="login-button" onclick="login()">Login</button>
+            </div>
+        </div>      
+        <div id="error-screen">
+            <div id="error-outline">
+                <img id="error-icon"
+                    src="https://assets.theravenhub.com/customers/artyom/kyoko-scpf/main-website/icons/error_icon.png"
+                    alt="Error icon">
+                <h2>204 No Content</h2>
+                <p>The server successfully processed the request, but is not returning any content.</p>
+            </div>
+        </div>
+        <div id="footer1">
+            <hr>
+            <p>Classified material beyond this point.</p>
+            <p>All activity is monitored and logged. This ressource is protected by Class-III memetic kill agents. Do not attempt to access this information without adequate clearance.</p>
+            <p id=contact>For any inquiries, please contact the <a href="mailto:technical-administration@kyoko-scpf.com">Site Administrator</a>.</p>
+        </div>
+        <div id="footer2">
+            <hr>
+            <p>All activity is monitored and logged. This ressource is protected by Class-III memetic kill agents. Do not attempt to access this information without adequate clearance.</p>
+            <p id=contact>For any inquiries, please contact the <a href="mailto:technical-administration@kyoko-scpf.com">Site Administrator</a>.</p>
+        </div>
+    </body>
+</html>

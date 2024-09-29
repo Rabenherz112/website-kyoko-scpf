@@ -1,0 +1,151 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Exo 2', monospace;
+    background-color: #d2d2d2;
+    color: #5A5A5A;
+    overflow: hidden;
+}
+
+/* Terminal styling */
+#terminal {
+    width: 100%;
+    height: 100%;
+    padding: 5% 0;
+    box-sizing: border-box;
+    opacity: 0;
+}
+#logo {
+    text-align: center;
+    margin-bottom: 20px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+#login-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 2px;
+    outline: 2px solid #494949;
+    background-color: #c2c2c2;
+    position: relative;
+    z-index: 1;
+}
+
+#login-button {
+    margin-right: 0px;
+    margin-left: auto;
+    display: block;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #d2d2d2;
+    border: 1px solid #5A5A5A;
+    color: #494949;
+    padding: 5px;
+}
+
+#footer1 {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #d2d2d2;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    opacity: 0;
+}
+
+#footer2 {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #d2d2d2;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    display: none;
+    opacity: 0;
+}
+
+/* Error styling */
+#error-screen {
+    display: none;
+    text-align: center;
+    opacity: 0;
+}
+
+#error-outline {
+    display: inline-block;
+    margin-top: 12.5%;
+    padding: 4rem;
+    background-color: #bbbbbb;
+    box-shadow: -10px 10px 1px 3px #7c7c7c;
+    position: relative;
+    z-index: 1;
+}
+
+#error-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+/* Water styling */
+#watermark {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    display: none;
+    opacity: 0;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+#watermark img {
+    margin-right: 10px;
+}
+
+.watermark-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.ld-he {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.sub-he {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Background styling
+A logo that is in the bottom right corner of the screen, partially transparent and partially outside the screen */
+#background-logo {
+    position: fixed;
+    bottom: -20rem;
+    right: -20rem;
+    z-index: 0;
+    opacity: 0.2;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
